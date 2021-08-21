@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+
+        <script>
+
+            // TODO: Add code to check answers to questions
+            function check()
+            {
+                let answer = document.querySelector('#answer').value;
+                if (answer === "Portuguese")
+                {
+                    document.querySelector('#answer').style.backgroundColor = "lightgreen";
+                    document.querySelector('#answer').value = "Correct";
+                    document.getElementById("feedback1").innerHTML = "Correct";
+                }
+                else
+                {
+                    document.querySelector('#answer').style.backgroundColor = "red";
+                    document.querySelector('#answer').value = "Incorrect";
+                    document.getElementById("feedback1").innerHTML = "Incorrect";
+                }
+            }
+            // Part of this function where get here https://stackoverflow.com/questions/48845033/how-to-change-button-color-onclick-using-javascript-only
+            function wrong(_this)
+            {
+               _this.style.backgroundColor = "red";
+               _this.textContent = "Incorrect";
+               document.getElementById("feedback").innerHTML = "Incorrect";
+            }
+            function right(_this)
+            {
+                _this.style.backgroundColor = "lightgreen";
+                _this.textContent = "Correct!";
+                document.getElementById("feedback").innerHTML = "Correct!";
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which year did Carl Sagan Born?</h3>
+                <div class = "answser">
+                    <button onclick="wrong(this);return false" type="button" id ="button">1930</button>
+                    <button onclick="wrong(this);return false" type="button" id ="button">1945</button>
+                    <button onclick="wrong(this);return false" type="button" id ="button">1937</button>
+                    <button onclick="wrong(this);return false" type="button" id ="button">1952</button>
+                    <button onclick="right(this);return false" type="button" id ="button">1934</button>
+                </div>
+                <p id = "feedback"></p>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What's the language spoken in Brazil?</h3>
+                <!-- TODO: Add free response question here -->
+                <form onsubmit="check(); return false">
+                        <input type="text" placeholder="Answer" id="answer">
+                        <button type="submit">Submit</button>
+                </form>
+                <p id = "feedback1"></p>
+            </div>
+        </div>
+    </body>
+</html>

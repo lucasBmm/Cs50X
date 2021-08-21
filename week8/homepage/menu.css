@@ -1,0 +1,116 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+header .container
+{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+#icons
+{
+    font-size:70px;
+    color:gray;
+    margin-top:20px;
+}
+#userimage
+{
+    width:150px;
+    margin-right:35px;
+    border-radius:10px;
+    border: 3px solid transparent;
+
+}
+.users, .user-container h1
+{
+    font-size:45px;
+    display:flex;
+    justify-content:center;
+    margin:0 auto;
+    align-items:center;
+}
+.user-container h1
+{
+    margin-top:70px;
+    margin-bottom:20px;
+}
+.user-container
+{
+    vertical-align:center;
+    margin:0px;
+}
+#profile-container
+{
+    display:flex;
+    list-style:none;
+    margin-bottom:40px;
+}
+#userimage:hover
+{
+    border: 3px solid white;
+}
+#profile-name
+{
+    line-height: 1.2em;
+    min-height: 1.8em;
+    color: grey;
+    display: block;
+    text-align: center;
+    font-size: 1.3vw;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.profile-plus
+{
+    margin-top:10px;
+}
+.profile-plus a:hover
+{
+    text-decoration:none;
+}
+#user:hover
+{
+    color:white;
+}
+#user:hover #profile-name
+{
+    color:white;
+    text-decoration:;
+}
+#user
+{
+    font-size:100px;
+    color:grey;
+}
+#profile:hover #profile-name
+{
+    color: white;
+    text-decoration:none;
+}
+#profile a:hover
+{
+    text-decoration:none;
+}
+#profile-button
+{
+    color:gray;
+    background-color:transparent;
+    padding:7px 23px 7px 23px;
+    border: 1px solid grey;
+    letter-spacing:2px;
+}
+#profile-button:hover
+{
+    color:white;
+    outline: 1px white solid;
+    cursor:pointer;
+}

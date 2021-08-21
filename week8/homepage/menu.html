@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="menu.css" rel="stylesheet">
+        <link rel="shortcut icon" href="images/Netflix.ico" type="image/x-icon">
+        <title>Netflix</title>
+    </head>
+    <body>
+    <header>
+        <div class="container">
+            <div class = "logos" >
+                <a href="#" id ="logo">
+                    <img src = "images/Netflix-Logo100.png">
+                </a>
+        </div>
+    </header>
+    <main>
+        <div class="user-container">
+            <h1>Who's watching?</h1>
+            <ul id="profile-container">
+                <div class="users">
+                    <li id="profile">
+                        <a id="user" href="index.html">
+                            <img id="userimage" src="images/user1.png">
+                            <span id="profile-name">Jhon</span>
+                        </a>
+                    </li>
+                    <li id = "profile">
+                        <a id="user" href="index.html">
+                            <img id="userimage" src="images/user2.png">
+                            <span id="profile-name">David</span>
+                        </a>
+                    </li>
+                    <li id = "profile">
+                        <a id="user" href="index.html">
+                            <img id="userimage" src="images/user3.png">
+                            <span id="profile-name">Bob</span>
+                        </a>
+                    </li>
+                    <li class = "profile-plus">
+                        <a href="#" id="user" onclick="message()"><i class="fas fa-plus-circle"></i>
+                            <span id="profile-name" style="margin-left:10px;">Add profile...</span>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <div class="d-flex justify-content-center">
+                <button id="profile-button">MANAGE PROFILES</button>
+            </div>
+         </div>
+    </main>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script>
+        function message()
+        {
+            alert("Not avaliable yet");
+        }
+    </script>
+</html>

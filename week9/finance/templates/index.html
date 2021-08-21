@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+    Portifolio
+{% endblock %}
+
+{% block main %}
+ <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+             <tfoot>
+                <tr>
+                    <td colspan="4"></td>
+                    <td><strong>$10,000.00</strong></td>
+                </tr>
+            </tfoot>
+            {% for dict_item in values %}
+               <tr>
+                    <td>{{ dict_item['symbol'] }}</td>
+                    <td>{{ dict_item['name'] }}</td>
+                    <td>{{ dict_item['shares'] }}</td>
+                    <td>{{ dict_item['price'] | usd }}</td>
+                    <td>{{ dict_item['total'] | usd }}</td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td>CASH</td>
+                <td colspan="3"></td>
+                <td> {{ cash[0]['cash'] | usd }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}

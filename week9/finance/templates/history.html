@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block tittle %}
+    Portifolio
+{% endblock %}
+
+{% block main %}
+ <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for dict_item in values %}
+               <tr>
+                    <td>{{ dict_item['symbol'] }}</td>
+                    <td>{{ dict_item['shares'] }}</td>
+                    <td>{{ dict_item['price']  }}</td>
+                    <td>{{ dict_item['transacted'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

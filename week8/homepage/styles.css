@@ -1,0 +1,216 @@
+:root
+{
+    --vermelho: rgb(219, 0, 0);
+    --preto: #141414;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+body
+{
+    font-family: sans-serif;
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+header .container
+{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+header .logos
+{
+    display: flex;
+    align-items: center;
+}
+header #icons
+{
+    margin-top:auto;
+    margin-bottom:auto;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-size: 18px;
+    margin-left: auto;
+    display: right;
+
+}
+header #icons:hover
+{
+    color: white;
+}
+header #logo
+{
+    font-size: 28px;
+    color: var(--vermelho);
+    margin-right: 35px;
+}
+header nav a
+{
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(224, 224, 224);
+    margin-right: 13px;
+}
+header nav a:hover
+{
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+}
+.inicio
+{
+    font-weight: bolder;
+    color: #fff;
+}
+.inicio:hover
+{
+    color:white;
+    cursor:default;
+}
+/*Filme principal*/
+.filme
+{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  url('images/strangerThings.jpg');
+    background-size:auto;
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.titulo
+{
+    margin-top: 15%;
+    font-size: 45px;
+}
+.filme .descricao
+{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#botao
+{
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 8px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all ;
+    border-radius:4px;
+
+}
+#botao1
+{
+    background-color: #6D6D6EB3;
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all ;
+    border-radius:4px;
+}
+#botao:hover, #botao1:hover
+{
+    filter: brightness(60%);
+}
+#botao i
+{
+    margin-right: 8px;
+}
+main .container
+{
+    margin-left: 42px;
+    width: 60%;
+}
+.filmes-body
+{
+    padding: 25px;
+}
+.box-filme
+{
+    margin-top:20px;
+    height: 150px;
+    width: 300px;
+    display: block;
+    border-radius: 3%;
+    display:flex;
+    margin-right:10px;
+}
+h1
+{
+    font-size: 20px;
+}
+.rodape
+{
+    display: flex;
+    align-items: center;
+    background-color: var(--preto);
+    margin-left: 180px;
+    margin-top: 50px;
+
+}
+.social i
+{
+    text-decoration: none;
+    color: darkgray;
+    cursor: pointer;
+    font-size: 30px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+.links a
+{
+
+    display: inline-block;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    width: 250px;
+    padding-bottom: 10px;
+}
+.links a:hover
+{
+    text-decoration: underline;
+}
+#botao-rodape
+{
+    font-size: 13px;
+    color: darkgray;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--preto);
+    border: solid rgb(139, 139, 139);
+    border-width: thin;
+}
+#botao-rodape:hover
+{
+    color: white;
+    cursor: pointer;
+}
+#texto
+{
+    font-size: 11px;
+    color: rgb(139, 139, 139);
+    margin-bottom: 12px;
+}
+.row
+{
+    margin-left:20px;
+}
+
+
+
+
+
+
