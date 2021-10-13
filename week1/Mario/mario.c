@@ -13,20 +13,38 @@ int main(void)
 
     pyr = height;
 
-    //Draw the pyramid
+   // write the pyramids
     for (int i = 0; i < height; i++)
     {
-        //Draw the blank spaces
-        for (int j = 1; j < pyr; j++)
+        int space = 0;
+        int a = -1;
+
+        //space between then
+        for (space = height - 1; space > i; space--)
         {
             printf(" ");
         }
-        //Draw the #
-        for (int y = pyr - 1; y < height; y++)
+        //First pyramid
+        do
         {
             printf("#");
+            a++;
+
         }
+        while (a < i);
+
+        printf("  ");
+        a = -1;
+
+        //Second pyramid
+        do
+        {
+            printf("#");
+            a++;
+
+        }
+        while (a < i);
+
         printf("\n");
-        pyr--;
     }
 }

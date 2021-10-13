@@ -38,7 +38,7 @@ int main(void)
 // Create a new individual with `generations`
 person *create_family(int generations)
 {
-    // TODO: Allocate memory for new person
+    // Allocate memory for new person
     person *people = malloc(sizeof(person));
 
     // Generation with parent data
@@ -56,11 +56,11 @@ person *create_family(int generations)
     // Generation without parent data
     else
     {
-        // TODO: Set parent pointers to NULL
+        // Set parent pointers to NULL
         people->parents[0] = NULL;
         people->parents[1] = NULL;
 
-        // TODO: Randomly assign alleles
+        // Randomly assign alleles
         people->alleles[0] = random_allele();
         people->alleles[1] = random_allele();
     }
